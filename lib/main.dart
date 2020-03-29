@@ -53,21 +53,21 @@ class MyApp extends StatelessWidget {
       ),
       home: IndexPage(),
       onGenerateRoute: Application.router.generator,//2.配置路由
-      localizationsDelegates: [
-        // 这行是关键
-        RefreshLocalizations.delegate,
-        // GlobalWidgetsLocalizations.delegate,
-        // GlobalMaterialLocalizations.delegate
-      ],
-      supportedLocales: [
-        const Locale('en'),
-        const Locale('zh'),
-      ],
-      localeResolutionCallback:
-          (Locale locale, Iterable<Locale> supportedLocales) {
-        //print("change language");
-        return locale;
-      },
+      // localizationsDelegates: [
+      //   // 这行是关键
+      //   RefreshLocalizations.delegate,
+      //   // GlobalWidgetsLocalizations.delegate,
+      //   // GlobalMaterialLocalizations.delegate
+      // ],
+      // supportedLocales: [
+      //   const Locale('en'),
+      //   const Locale('zh'),
+      // ],
+      // localeResolutionCallback:
+      //     (Locale locale, Iterable<Locale> supportedLocales) {
+      //   //print("change language");
+      //   return locale;
+      // },
     // )
     );
   }
