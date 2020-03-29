@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/fluttertoast-3.1.3" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/url_launcher_macos-0.0.1+4" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/url_launcher_web-0.1.1+1" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.5.6+3" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_web-0.1.2+4" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/url_launcher-5.4.2" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/amap_map_fluttify-0.18.2+c038d50" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/amap_core_fluttify-0.5.6+3ebdbdc" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/foundation_fluttify-0.4.18" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

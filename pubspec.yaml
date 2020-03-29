@@ -46,6 +46,11 @@ dependencies:
   fish_redux:  #^0.3.1
   #滑动到指定位置
   scroll_to_index:
+
+  #高德地图
+  amap_map_fluttify:
+  permission_handler: #权限
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

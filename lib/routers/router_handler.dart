@@ -9,7 +9,7 @@ import 'dart:convert' as convert;
 //页面
 import '../pages/goods/goods_detail_page.dart';
 import '../pages/category/scond_category.dart';
-
+import '../pages/member/amap_page.dart';
 
 //商品详情
 Handler goodsDetailsHandler = Handler(
@@ -42,4 +42,10 @@ Handler mapAndPushPage = Handler(
   handlerFunc: (context, parameters) {
     return SettingPage();
   },
+);
+
+Handler ampapage = Handler(
+  handlerFunc: (context,parameters){
+    return AmApPage();
+  }
 );

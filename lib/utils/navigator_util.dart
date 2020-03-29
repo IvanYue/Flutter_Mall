@@ -31,7 +31,11 @@ class NavigatorUtils {
 
   //地图。推送继承
   static mapAndPushPage(BuildContext context){
-    Application.router.navigateTo(context, Routes.settingPage,);
+    Application.router.navigateTo(context, Routes.settingPage,transition: TransitionType.inFromRight);
+  }
+
+  static amapPage(BuildContext context){
+    Application.router.navigateTo(context, Routes.amapPage,transition: TransitionType.inFromBottom);
   }
 }
 

@@ -1,6 +1,21 @@
 PODS:
+  - AMap3DMap (6.9.0):
+    - AMapFoundation (~> 1.5)
+  - amap_core_fluttify (0.0.1):
+    - AMapFoundation (~> 1.6)
+    - Flutter
+    - foundation_fluttify
+  - amap_map_fluttify (0.0.1):
+    - AMap3DMap (~> 6.9.0)
+    - amap_core_fluttify
+    - Flutter
+    - foundation_fluttify
+    - url_launcher
+  - AMapFoundation (1.6.2)
   - Flutter (1.0.0)
   - fluttertoast (0.0.2):
+    - Flutter
+  - foundation_fluttify (0.0.1):
     - Flutter
   - shared_preferences (0.0.1):
     - Flutter
@@ -16,8 +31,11 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - amap_core_fluttify (from `.symlinks/plugins/amap_core_fluttify/ios`)
+  - amap_map_fluttify (from `.symlinks/plugins/amap_map_fluttify/ios`)
   - Flutter (from `Flutter`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - foundation_fluttify (from `.symlinks/plugins/foundation_fluttify/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
   - shared_preferences_macos (from `.symlinks/plugins/shared_preferences_macos/ios`)
   - shared_preferences_web (from `.symlinks/plugins/shared_preferences_web/ios`)
@@ -25,11 +43,22 @@ DEPENDENCIES:
   - url_launcher_macos (from `.symlinks/plugins/url_launcher_macos/ios`)
   - url_launcher_web (from `.symlinks/plugins/url_launcher_web/ios`)
 
+SPEC REPOS:
+  trunk:
+    - AMap3DMap
+    - AMapFoundation
+
 EXTERNAL SOURCES:
+  amap_core_fluttify:
+    :path: ".symlinks/plugins/amap_core_fluttify/ios"
+  amap_map_fluttify:
+    :path: ".symlinks/plugins/amap_map_fluttify/ios"
   Flutter:
     :path: Flutter
   fluttertoast:
     :path: ".symlinks/plugins/fluttertoast/ios"
+  foundation_fluttify:
+    :path: ".symlinks/plugins/foundation_fluttify/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
   shared_preferences_macos:
@@ -44,8 +73,13 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/url_launcher_web/ios"
 
 SPEC CHECKSUMS:
+  AMap3DMap: c80b264f08f179d9b0949b84c65fc1a51dec9d6f
+  amap_core_fluttify: f82f67cdc867f8fa2f7253bd9a58d8876c260317
+  amap_map_fluttify: 25e2e712b0834a66379a9abaee4d72635e9733a1
+  AMapFoundation: 672dc3a4759cb733f447c1e1b020f7ba2729f4ab
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
+  foundation_fluttify: 3038fcc96aabb59c77f595964954c118af535d57
   shared_preferences: 430726339841afefe5142b9c1f50cb6bd7793e01
   shared_preferences_macos: f3f29b71ccbb56bf40c9dd6396c9acf15e214087
   shared_preferences_web: 141cce0c3ed1a1c5bf2a0e44f52d31eeb66e5ea9

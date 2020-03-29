@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 import 'package:mall_litemall_demo/pages/member/user_Info_widget.dart';
 
+import '../../utils/navigator_util.dart';
+
 class MemberPage extends StatefulWidget {
   MemberPage({Key key}) : super(key: key);
 
@@ -18,7 +20,7 @@ class _MemberPageState extends State<MemberPage> {
           IconButton(
             icon: Icon(Icons.settings, color: Colors.white, size: 20),
           onPressed: () {
-            
+            NavigatorUtils.mapAndPushPage(context);
             
           },),
         ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 import 'package:mall_litemall_demo/pages/member/user_Info_widget.dart';
+import 'package:mall_litemall_demo/utils/navigator_util.dart';
 
 class SettingPage extends StatefulWidget {
   SettingPage({Key key}) : super(key: key);
@@ -14,23 +15,32 @@ class _SettingPageState extends State<SettingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.settings, color: Colors.white, size: 20),
-          ),
-        ],
-        title: Text('我的'),
-        leading: IconButton(
-          icon: Icon(
-            Icons.message,
-            color: Colors.white,
-            size: 20,
-          ),
-        ),
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(Icons.settings, color: Colors.white, size: 20),
+        //   ),
+        // ],
+        title: Text('demo集合'),
       ),
       body: ListView(
         children:[
-          _orderTitle('地图',Icons.map,20),
+          Container(
+            margin: EdgeInsets.only(top:20),
+            decoration: BoxDecoration(
+                color:Colors.white,
+                border: Border(bottom:BorderSide(width: 1,color:Colors.black12))
+            ),
+            // height: ScreenUtil().setHeight(150),
+            child: ListTile(
+              onLongPress: (){
+                  NavigatorUtils.amapPage(context);
+              },
+              leading: Icon(Icons.map,color: Colors.lightBlue,),
+              title: Text('高德地图'),
+              // subtitle: Text(title),
+              trailing: Icon(Icons.chevron_right),
+            ),
+          ),
           _orderTitle('推送',Icons.mobile_screen_share,0.5),
         ]
       ),

@@ -8,6 +8,7 @@ class Routes{
   static String  goodsDetailPage = '/detail'; 
   static String secondCategoryGoodList = '/secondCategoryGoodsList';
   static String settingPage = '/setting';
+  static String amapPage = '/setting/amapPage';
   static void configureRotes(Router router){
     router.notFoundHandler = Handler(
       handlerFunc: (context, parameters) {
@@ -19,8 +20,9 @@ class Routes{
     //二级分类商品列表
     router.define(secondCategoryGoodList, handler: secondCategoryHandler);
 
-    //继承地图、推送
+    //集成地图、推送
     router.define(settingPage, handler: mapAndPushPage);
+    router.define(amapPage, handler: ampapage);
   }
 }
 
